@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Anuronan- Valo~</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.17.0/dist/full.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .donation-amount {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s, transform 1s;
+    }
+
+    .fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mirror-bg {
+      position: relative;
+      height: 100vh;
+      background-image: url('lol.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.6);
+    }
+
+    .mirror-bg::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+      transform: scaleY(-1);
+      filter: brightness(0.3);
+      opacity: 0.6;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .donation-text {
+      max-height: 7rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .show {
+      max-height: none;
+    }
+
+    .see-more {
+      color: #c4c4c4;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    #donationText {
+      width: 800px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #donationText {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <header class="header-section text-white py-6">
+    <nav class="container mx-auto flex flex-col">
+      <div class="text-4xl font-bold mx-auto text-center md:text-5xl">
+        <h1>অনুরণন</h1>
+      </div>
+    </nav>
+  </header>
+
+  <style>
+    .header-section {
+      background-color: #1B3682;
+    }
+  </style>
+
+  <section class="relative flex items-center justify-center h-screen mirror-bg">
+    <div class="overlay"></div>
+    <div class="text-center relative z-10">
+      <h1 class="text-3xl md:text-5xl font-bold text-cyan-50 mb-8">Total Donations Collected</h1>
+      <div id="donationAmount" class="donation-amount text-4xl md:text-7xl font-extrabold text-green-300">
+        ৳1,234,567
+      </div>
+      <div class="text-white mt-6 donation-text" id="donationText">
+        <p>অনুরণন একটি অরাজনৈতিক, কল্যাণমূলক ও স্বেচ্ছাসেবী সংগঠন... শিশুর সেবা প্রদান করে এমন সংস্থাগুলোর মাধ্যমে তারা
+          যে সহায়তা পেতে পারে সে সম্পর্কে প্রায় ৭৯ শতাংশ পথশিশুই অবগত ছিলো না...</p>
+      </div>
+      <span class="see-more" id="seeMoreBtn">See more...</span>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 অনুরণন. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('load', function () {
+      document.body.style.opacity = '1';
+      setTimeout(() => {
+        document.getElementById('donationAmount').classList.add('fade-in');
+      }, 300);
+    });
+    const seeMoreBtn = document.getElementById('seeMoreBtn');
+    const donationText = document.getElementById('donationText');
+    seeMoreBtn.addEventListener('click', function () {
+      if (donationText.classList.contains('show')) {
+        donationText.classList.remove('show');
+        seeMoreBtn.textContent = 'See more...';
+      } else {
+        donationText.classList.add('show');
+        seeMoreBtn.textContent = 'See less...';
+      }
+    });
+  </script>
+</body>
+
+</html>
