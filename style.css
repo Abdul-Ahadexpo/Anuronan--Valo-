@@ -5,27 +5,23 @@ body {
   opacity: 0;
   transition: opacity 1s ease;
 }
-
 .donation-amount {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s, transform 1s;
+  transform: translateY(31px);
+  transition: opacity 1s, transform 4s;
 }
-
 .fade-in {
   opacity: 1;
   transform: translateY(0);
 }
-
 .mirror-bg {
   position: relative;
   height: 100vh;
   background-image: url("lol.jpg");
   background-size: cover;
   background-position: center;
-  filter: brightness(0.6);
+  filter: brightness(0.8);
 }
-
 .mirror-bg::after {
   content: "";
   position: absolute;
@@ -39,7 +35,6 @@ body {
   filter: brightness(0.3);
   opacity: 0.6;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -48,29 +43,24 @@ body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
 .donation-text {
   max-height: 7rem;
   overflow: hidden;
   position: relative;
   transition: max-height 0.5s ease;
 }
-
 .show {
   max-height: 20rem;
 }
-
 .see-more {
   color: #c4c4c4;
   cursor: pointer;
   text-align: center;
   margin-top: 10px;
 }
-
 #donationText {
   width: 800px;
 }
-
 @media only screen and (max-width: 600px) {
   #donationText {
     width: 100%;
