@@ -53,7 +53,7 @@ body {
 }
 #cardBoy {
   border: 2px solid rgba(0, 255, 221, 0.315);
-  background-color: #16ecec1e;
+  background-color: #16ecec17;
   border-radius: 25px;
 }
 .overlay {
@@ -85,6 +85,9 @@ body {
 .ShowOnPhone {
   display: none;
 }
+.bra {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   #donationText {
     width: 100%;
@@ -95,5 +98,14 @@ body {
   }
   .ShowOnPhone {
     display: block;
+  }
+  .bra {
+    display: block;
+  }
+  .CardText {
+    text-align: left;
+  }
+  .lolBank {
+    width: 100%;
   }
 }
