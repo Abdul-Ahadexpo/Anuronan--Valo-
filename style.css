@@ -35,6 +35,11 @@ body {
   filter: brightness(0.3);
   opacity: 0.6;
 }
+#cardBoy {
+  border: 2px solid rgba(29, 135, 255, 0.829);
+  background-color: #1661ec44;
+  border-radius: 25px;
+}
 .overlay {
   position: absolute;
   top: 0;

@@ -15,3 +15,17 @@ seeMoreBtn.addEventListener("click", function () {
     seeMoreBtn.textContent = "See less...";
   }
 });
+// Automatic SlideShow Code
+const bgImages = ['url("lol.jpg")', 'url("Poor.jpg")', 'url("stupid.png")'];
+
+let idx = 0;
+
+const updateBg = () => {
+  const section = document.getElementById("RealBg");
+  section.style.backgroundImage = bgImages[idx];
+
+  idx = (idx + 1) % bgImages.length;
+};
+
+setInterval(updateBg, 5000);
+updateBg();

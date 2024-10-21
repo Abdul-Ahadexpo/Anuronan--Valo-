@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.17.0/dist/full.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5fc4420cfa.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -21,28 +22,26 @@
     </nav>
   </header>
 
-  <style>
 
-  </style>
 
-  <section class="relative flex items-center justify-center h-screen mirror-bg">
+  <section id="RealBg" class="relative flex flex-col items-center justify-center h-screen mirror-bg">
+
     <div class="overlay"></div>
-    <div class="text-center relative z-10">
+    <div id="cardBoy" class="text-center relative z-10">
       <h1 class="text-3xl md:text-5xl font-bold text-cyan-50 mb-8">Total Donations Collected</h1>
       <div id="donationAmount" class="donation-amount text-5xl md:text-7xl font-extrabold text-green-300">
-        ৳1,234,567
+        ৳১২৯৫০.৩৭
       </div>
 
 
 
       <div class="text-white mt-6 donation-text" id="donationText">
-        <p class="HideOnPhone">অনুরণন একটি অরাজনৈতিক, কল্যাণমূলক ও স্বেচ্ছাসেবী সংগঠন... শিশুর সেবা প্রদান করে এমন
-          সংস্থাগুলোর মাধ্যমে তারা
-          যে সহায়তা পেতে পারে সে সম্পর্কে প্রায় ৭৯ শতাংশ পথশিশুই অবগত ছিলো না...</p>
+        <p class="HideOnPhone">আপনাদের দেওয়া প্রত্যেকটা
+          পয়সা যাবে অসহায় ভিটেহারা মানুষদের সাহায্য করতে।</p>
 
         <p class="ShowOnPhone text-center">
-          অনুরণন বাংলাদেশকে দারিদ্রমুক্ত করতে, অসহায় পথশিশু ও অভাবী অনাহারীদের পাশে দাঁড়াতে এবং দুর্যোগকালীন সময়ে সেবা
-          দিতে কাজ করে যাচ্ছে। আসুন আমরা সাহায্যের হাত এগিয়ে দিয়ে একে অপরের পাশে দাঁড়াই।
+          আপনাদের দেওয়া প্রত্যেকটা
+          পয়সা যাবে অসহায় ভিটেহারা মানুষদের সাহায্য করতে।
         </p>
       </div>
       <span class="see-more" id="seeMoreBtn">See more...</span>
@@ -104,6 +103,71 @@
 
 
     </div>
+
+
+
+    <!----------------- Bank cards -->
+    <div class="lolBank mt-7 flex flex-col" id="BankCards">
+
+      <p class="CardText mb-7 text-white">Share this website with your friends or<br> Send Money with reference
+        "Donation" to any
+        of
+        the
+        following numbers:
+      </p>
+
+      <a class="Card-b baku mb-3" href=""><i class="fa-solid fa-dove"></i> bKash: 016 1488 7878</a>
+
+      <a class="Card-n baku mb-3" href=""><i class="fa-solid fa-comments-dollar"></i> Nagad: 016 1488 7878</a>
+
+      <a class="Card-r baku" href=""><i class="fa-regular fa-paper-plane"></i> Rocket: 016 1488 78784</a>
+
+    </div>
+    <style>
+      .lolBank {
+        border: 2px solid transparent;
+        border-radius: 35px;
+        background-color: #0768b85b;
+      }
+
+      .CardText {
+        margin-top: 10px;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .Card-b {
+        text-align: center;
+        width: 200px;
+        height: 28px;
+        background-color: rgb(255, 0, 85);
+        border-radius: 50px;
+
+      }
+
+      .Card-n {
+        text-align: center;
+        width: 200px;
+        height: 28px;
+        background-color: #F66727;
+        border-radius: 50px;
+      }
+
+      .Card-r {
+        text-align: center;
+        width: 200px;
+        height: 28px;
+        background-color: #89288F;
+        border-radius: 50px;
+        margin-bottom: 15px;
+      }
+
+      .baku {
+        color: white;
+        align-self: center;
+      }
+    </style>
+
   </section>
 
   <footer class="bg-gray-900 text-white py-8">
