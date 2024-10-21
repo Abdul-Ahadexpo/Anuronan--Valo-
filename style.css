@@ -20,7 +20,23 @@ body {
   background-image: url("lol.jpg");
   background-size: cover;
   background-position: center;
-  filter: brightness(0.8);
+}
+.mirror-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+.mirror-bg > * {
+  position: relative;
+  z-index: 2;
 }
 .mirror-bg::after {
   content: "";
