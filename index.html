@@ -28,8 +28,9 @@
 
     <div class="overlay"></div>
     <div id="cardBoy" class="text-center relative z-10">
-      <h1 class="text-3xl md:text-5xl font-bold text-cyan-50 mb-8">Total Donations Collected</h1>
-      <div id="donationAmount" class="donation-amount text-5xl md:text-7xl font-extrabold text-green-300">
+      <h1 class="text-3xl md:text-5xl font-bold text-white mb-8">Support Our Cause</h1>
+      <h3 class="text-gray-50">এই পর্যন্ত প্রাপ্ত :</h3>
+      <div id="donationAmount" class="donation-amount text-5xl md:text-7xl font-extrabold text-gray-400">
         ৳১২৯৫০.৩৭
       </div>
 
@@ -63,33 +64,34 @@
         }
 
         .contribute-button {
-          background-color: #008cff;
+          background-color: #1ABB9C;
           font-weight: 500;
           border-radius: 50px;
-          color: white;
+          color: #ebfffb;
           padding: 0.5rem 1.5rem;
           border: none;
           transform: translateZ(0);
           cursor: pointer;
           transition: background-color 0.3s ease-in-out, transform 0.2s;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 15px rgba(135, 191, 255, 0.7);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 15px #00ffcc;
         }
 
         .contribute-button:hover {
           transform: translateY(-3px);
-          background-color: #00a2ff;
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(53, 122, 189, 0.8);
+          background-color: #00ffccd2;
+          color: white;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 20px #00ffcc;
         }
 
         .contribute-button:focus {
-          box-shadow: 0 0 0 4px rgba(0, 153, 255, 0.2), 0 0 20px rgba(53, 122, 189, 0.8);
+          box-shadow: 0 0 0 4px #1abb9b59, 0 0 20px #1ABB9C;
           outline: none;
         }
 
         .contribute-text {
           margin-top: 0.5rem;
           font-size: 0.875rem;
-          color: #b0c4de;
+          color: #c4c5c7;
         }
       </style>
 
@@ -109,11 +111,12 @@
     <!----------------- Bank cards -->
     <div class="lolBank mt-7 flex flex-col" id="BankCards">
 
-      <p class="CardText mb-7 text-white">Share this website with your friends or<br> Send Money with reference
+      <p class="CardText mb-5 text-white">Share this website with your friends or<br> Send Money with reference
         "Donation" to any
         of
         the
         following numbers:
+        <br> <span class="text-xl font-bold">Donate:</span>
       </p>
 
       <a class="Card-b baku mb-3" href=""><i class="fa-solid fa-dove"></i> bKash: 016 1488 7878</a>

@@ -52,8 +52,8 @@ body {
   opacity: 0.6;
 }
 #cardBoy {
-  border: 2px solid rgba(29, 135, 255, 0.829);
-  background-color: #1661ec44;
+  border: 2px solid rgba(0, 255, 221, 0.829);
+  background-color: #16ecec36;
   border-radius: 25px;
 }
 .overlay {
