@@ -52,7 +52,7 @@ body {
   opacity: 0.6;
 }
 #cardBoy {
-  border: 2px solid rgba(0, 255, 221, 0.315);
+  border: 2px solid transparent /* rgba(0, 255, 221, 0.315)*/;
   background-color: #16ecec17;
   border-radius: 25px;
 }
@@ -89,6 +89,11 @@ body {
   display: none;
 }
 @media only screen and (max-width: 600px) {
+  #cardBoy {
+    scale: 95%;
+    position: relative;
+    top: -50px;
+  }
   #donationText {
     width: 100%;
     text-align: justify;
@@ -107,5 +112,7 @@ body {
   }
   .lolBank {
     width: 100%;
+    position: relative;
+    top: -60px;
   }
 }
