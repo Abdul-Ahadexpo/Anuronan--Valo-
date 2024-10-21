@@ -32,11 +32,77 @@
       <div id="donationAmount" class="donation-amount text-5xl md:text-7xl font-extrabold text-green-300">
         ৳1,234,567
       </div>
+
+
+
       <div class="text-white mt-6 donation-text" id="donationText">
-        <p>অনুরণন একটি অরাজনৈতিক, কল্যাণমূলক ও স্বেচ্ছাসেবী সংগঠন... শিশুর সেবা প্রদান করে এমন সংস্থাগুলোর মাধ্যমে তারা
+        <p class="HideOnPhone">অনুরণন একটি অরাজনৈতিক, কল্যাণমূলক ও স্বেচ্ছাসেবী সংগঠন... শিশুর সেবা প্রদান করে এমন
+          সংস্থাগুলোর মাধ্যমে তারা
           যে সহায়তা পেতে পারে সে সম্পর্কে প্রায় ৭৯ শতাংশ পথশিশুই অবগত ছিলো না...</p>
+
+        <p class="ShowOnPhone text-center">
+          অনুরণন বাংলাদেশকে দারিদ্রমুক্ত করতে, অসহায় পথশিশু ও অভাবী অনাহারীদের পাশে দাঁড়াতে এবং দুর্যোগকালীন সময়ে সেবা
+          দিতে কাজ করে যাচ্ছে। আসুন আমরা সাহায্যের হাত এগিয়ে দিয়ে একে অপরের পাশে দাঁড়াই।
+        </p>
       </div>
       <span class="see-more" id="seeMoreBtn">See more...</span>
+
+      <div class="contribute-section">
+
+        <button onclick="GoToThePage('https://www.facebook.com/anuranan.2024')" id="cont-btn" class="contribute-button">
+          Contribute Now
+        </button>
+
+        <p class="contribute-text">Your <i>generosity</i> can make a <strong>Change</strong></p>
+      </div>
+
+
+      <!-- Styles for the cont-btn -->
+      <style>
+        .contribute-section {
+          margin-top: 1rem;
+        }
+
+        .contribute-button {
+          background-color: #008cff;
+          font-weight: 500;
+          border-radius: 50px;
+          color: white;
+          padding: 0.5rem 1.5rem;
+          border: none;
+          transform: translateZ(0);
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out, transform 0.2s;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 15px rgba(135, 191, 255, 0.7);
+        }
+
+        .contribute-button:hover {
+          transform: translateY(-3px);
+          background-color: #00a2ff;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(53, 122, 189, 0.8);
+        }
+
+        .contribute-button:focus {
+          box-shadow: 0 0 0 4px rgba(0, 153, 255, 0.2), 0 0 20px rgba(53, 122, 189, 0.8);
+          outline: none;
+        }
+
+        .contribute-text {
+          margin-top: 0.5rem;
+          font-size: 0.875rem;
+          color: #b0c4de;
+        }
+      </style>
+
+
+      <script>
+        function GoToThePage(url) {
+          window.open(url, '_self').focus();
+        }
+      </script>
+
+
+
     </div>
   </section>
 

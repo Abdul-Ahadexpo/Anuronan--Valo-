@@ -61,9 +61,18 @@ body {
 #donationText {
   width: 800px;
 }
+.ShowOnPhone {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   #donationText {
     width: 100%;
     text-align: justify;
+  }
+  .HideOnPhone {
+    display: none;
+  }
+  .ShowOnPhone {
+    display: block;
   }
 }
