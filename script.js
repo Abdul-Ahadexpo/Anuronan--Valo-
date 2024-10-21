@@ -16,7 +16,11 @@ seeMoreBtn.addEventListener("click", function () {
   }
 });
 // Automatic SlideShow Code
-const bgImages = ['url("lol.jpg")', 'url("Poor.jpg")', 'url("stupid.png")'];
+const bgImages = [
+  'url("https://cdn.pixabay.com/photo/2017/07/22/20/40/girl-2529907_1280.jpg")',
+  'url("https://www.insidephilanthropy.com/wp-content/uploads/2024/07/shutterstock_564267847.jpg")',
+  'url("https://pbs.twimg.com/media/GYLwEs-XIAAq_IV.jpg:large")',
+];
 
 let idx = 0;
 
@@ -27,5 +31,5 @@ const updateBg = () => {
   idx = (idx + 1) % bgImages.length;
 };
 
-setInterval(updateBg, 5000);
+setInterval(updateBg, 10000);
 updateBg();
